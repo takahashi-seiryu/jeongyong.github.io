@@ -30,17 +30,14 @@
       "institution": "Hanyang University, Seoul, Korea",
       "location": "Seoul, Korea",
       "url": "https://ae.hanyang.ac.kr/",
-      "studyType": [
-        "B.S. in Automotive Engineering<br>",
-        "B.S. in Convergence Technology for Advanced Vehicles (CS-oriented)"
-      ],
+      "studyType": ["B.S. in Automotive Engineering<br>", "B.S. in Convergence Technology for Advanced Vehicles (CS-oriented)"],
       "startDate": "2018-03-01",
       "endDate": "2024-02-01",
       "score": "4.24/4.5",
       "courses": []
     }
   ],
-    "work": [
+  "work": [
     {
       "name": "ACEWORKS",
       "location": "Seoul, Korea",
@@ -66,39 +63,24 @@
     {
       "name": "Control",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Control Barrier Functions",
-        "Model Predictive Control",
-        "Stochastic Systems",
-        "Koopman Operator"
-      ]
+      "keywords": ["Control Barrier Functions", "Model Predictive Control", "Stochastic Systems", "Koopman Operator"]
     },
     {
       "name": "Learning & Uncertainty",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Flow Matching",
-        "Conformal Prediction"
-      ]
+      "keywords": ["Flow Matching", "Conformal Prediction"]
     }
   ],
   "skills": [
     {
       "name": "Software & Tools",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "C/C++",
-        "Python",
-        "MATLAB/Simulink"
-      ]
+      "keywords": ["C/C++", "Python", "MATLAB/Simulink"]
     },
     {
       "name": "CAD & Simulation",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "CATIA",
-        "CarMaker"
-      ]
+      "keywords": ["CATIA", "CarMaker"]
     }
   ]
 }

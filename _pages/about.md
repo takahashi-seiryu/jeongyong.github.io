@@ -38,19 +38,19 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-I am an M.S. student in the 
-[School of Electrical Engineering, KAIST](https://ee.kaist.ac.kr/en/), 
-advised by [Prof. SooJean Han](https://soojean.github.io/) in the 
+
+I am an M.S. student in the
+[School of Electrical Engineering, KAIST](https://ee.kaist.ac.kr/en/),
+advised by [Prof. SooJean Han](https://soojean.github.io/) in the
 [Autonomous Control for Stochastic Systems (ACSS)](http://acss.kaist.ac.kr/).
 
-My research focuses on **safety-critical system and control**, 
-with applications to robotics. 
-I am particularly interested in developing methods for **safe control of stochastic systems** 
+My research focuses on **safety-critical system and control**,
+with applications to robotics.
+I am particularly interested in developing methods for **safe control of stochastic systems**
 and **uncertainty-aware motion planning** for autonomous robots.
 
-My long-term goal is to establish an autonomy framework that **unifies learning with formal guarantees**, 
+My long-term goal is to establish an autonomy framework that **unifies learning with formal guarantees**,
 so that our systems are not only performant but also provably safe.
-
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
