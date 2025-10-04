@@ -754,6 +754,11 @@ footer.sticky-bottom {
               text-decoration: none;
             }
           }
+
+          /* Ensure non-link content (e.g., <div> text) is white too */
+          > div {
+            color: var(--global-hover-text-color) !important;
+          }
         }
 
         .award {
@@ -764,6 +769,16 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+        color: $black-color;
+
+        a {
+          color: $black-color;
+
+          &:hover {
+            color: $black-color;
+            text-decoration: none;
+          }
+        }
       }
 
       .author {

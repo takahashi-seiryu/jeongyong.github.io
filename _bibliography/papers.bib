@@ -1,115 +1,51 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@misc{yang2025safeflowmatchersafefastplanning,
+  title={SafeFlowMatcher: Safe and Fast Planning using Flow Matching with Control Barrier Functions}, 
+  author={Jeongyong Yang* and Seunghwan Jang* and SooJean Han},
+  year={2025},
+  month={Oct},
+  eprint={2509.24243},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2509.24243},
+  html={https://arxiv.org/abs/2509.24243},
+  abbr={Preprint},
   selected={true},
-  inspirehep_id = {3255}
+  annotation={* Equal contribution},
+  preview={safeflowmatcher.gif},
+  abstract={Generative planners based on Flow Matching (FM) produce high-quality paths in a single or a few ODE steps, but their sampling dynamics offer no formal safety guarantees and can yield incomplete paths near constraints. We present SafeFlowMatcher, a planning framework that couples FM with control barrier functions (CBFs) to achieve both real-time efficiency and certified safety. SafeFlowMatcher uses a two-phase prediction–correction (PC) integrator: (i) a prediction phase integrates the learned FM once (or a few steps) to obtain a candidate path without intervention; (ii) a correction phase refines this path with a vanishing time-scaled vector field and a CBF-based quadratic program that minimally perturbs the vector field. We prove a barrier certificate for the resulting flow system, establishing forward invariance of a robust safe set and finite-time convergence to the safe set. In addition, by enforcing safety only on the executed path—rather than all intermediate latent paths—SafeFlowMatcher avoids distributional drift and mitigates local trap problems. Moreover, SafeFlowMatcher attains faster, smoother, and safer paths than diffusion- and FM-based baselines on maze navigation and locomotion. Extensive ablations corroborate the contributions of the PC integrator and the barrier certificate.},
+  pdf={https://arxiv.org/pdf/2509.24243}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@misc{yang2025heterogeneouspredictorbasedriskawareplanning,
+  title={Heterogeneous Predictor-based Risk-Aware Planning with Conformal Prediction in Dense, Uncertain Environments}, 
+  author={Jeongyong Yang* and KwangBin Lee* and SooJean Han},
+  year={2025},
+  month={Jul},
+  eprint={2507.11920},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2507.11920},
+  html={https://arxiv.org/abs/2507.11920},
+  abbr={Preprint},
+  selected={true},
+  annotation={* Equal contribution},
+  preview={HPRAP.png},
+  abstract={Real-time planning among many uncertain, dynamic obstacles is challenging because predicting every agent with high fidelity is both unnecessary and computationally expensive. We present Heterogeneous Predictor-based Risk-Aware Planning (H-PRAP), a framework that allocates prediction effort to where it matters. H-PRAP introduces the Probability-based Collision Risk Index (P-CRI), a closed-form, horizon-level collision index obtained by calibrating a Gaussian surrogate with conformal prediction. P-CRI drives a router that assigns high-risk obstacles to accurate but expensive predictors and low-risk obstacles to lightweight predictors, while preserving distribution-free coverage across heterogeneous predictors through conformal prediction. The selected predictions and their conformal radii are embedded in a chance-constrained model predictive control (MPC) problem, yielding receding-horizon policies with explicit safety margins. We analyze the safety-efficiency trade-off under a prediction compute budget: allocating more to low-fidelity predictions reduces residual risk from dropped obstacles, but at the same time induces larger conformal radii, degrades trajectory efficiency, and shrinks MPC feasibility. Extensive numerical simulations in dense, uncertain environments validate that H-PRAP attains the best balance between trajectory success rate (i.e., no collisions) and time to reach the goal (i.e., trajectory efficiency) compared to single-prediction architectures.},
+  pdf={https://arxiv.org/pdf/2507.11920}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{yang2025kroc,
+  author    = {Yang, Jeongyong and Ju, Hojin and Han, SooJean},
+  title     = {Curvature and Energy-based Trajectory Optimization in Unstructured Environments},
+  booktitle = {Proceedings of the Korean Robotics Conference 2025 (KRoC 2025)},
+  year      = {2025},
+  month     = feb,
+  abbr      = {KRoC},
+  abstract  = {Safe and efficient path planning is crucial for autonomous driving systems. In this paper, we propose a trajectory optimization algorithm for unstructured environments that minimizes both curvature and energy while achieving a near-time-optimal path. To improve efficiency of the optimization process, we employ path velocity decomposition and reformulate the complex optimization problem with the agent's dynamic constraints into a quadratic programming (QP) problem, considering the agent as a point of mass.
+Previous curvature-based algorithms were primarily designed for racing scenarios, limited to static bounded tracks. In contrast, our approach extends their applicability to complex open environments with obstacles, enabling safe and efficient navigation through the use of a boundary tube constraint. Furthermore, we introduce several techniques to adapt the algorithm to unstructured environments, such as adaptive path spacing to enhance computational efficiency by reducing the dimension of the QP problem. Additional methods, including boundary tube correction and decaying curvature bound, ensure more feasible and stable solutions for the algorithm. The proposed algorithm was implemented in ROS Gazebo and successfully tested on a four-wheel drive robot. Results demonstrate that the proposed algorithm generates safe, smooth and time efficient paths, showing improved performance compared to B-spline and the original curvature-based optimization method.},
+  pdf       = {Curvature_and_Energy_based_Trajectory_Optimization_in_Unstructured_Environments.pdf},
+  preview   = {curvature.png},
 }

@@ -32,3 +32,19 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"han":
+  - firstname: ["SooJean", "S."]
+    url: https://soojean.github.io/
+
+"lee":
+  - firstname: ["KwangBin", "K."]
+    # url: https://github.com/KwangBin417
+
+"jang":
+  - firstname: ["Seunghwan", "S."]
+    # url: https://github.com/Jang-seunghwan
+
+"ju":
+  - firstname: ["Hojin", "H."]
+    # url: https://github.com/JuHojin
