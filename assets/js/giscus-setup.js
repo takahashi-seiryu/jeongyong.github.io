@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "takahashi-seiryu/jeongyong.github.io",
+    "data-repo": "takahashi-seiryu/takahashi-seiryu.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
