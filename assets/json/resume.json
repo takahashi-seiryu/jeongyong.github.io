@@ -17,7 +17,7 @@
   },
   "education": [
     {
-      "institution": "Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Korea",
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
       "location": "Daejeon, Korea",
       "url": "https://ee.kaist.ac.kr/en/",
       "studyType": "M.S. in Electrical Engineering",
@@ -27,13 +27,14 @@
       "courses": []
     },
     {
-      "institution": "Hanyang University, Seoul, Korea",
+      "institution": "Hanyang University",
       "location": "Seoul, Korea",
       "url": "https://ae.hanyang.ac.kr/",
-      "studyType": ["B.S. in Automotive Engineering<br>", "B.S. in Convergence Technology for Advanced Vehicles (CS-oriented)"],
+      "studyType": ["B.S. in Automotive Engineering<br>", "B.S. in Convergence Technology for Advanced Vehicles (Dual Degree)"],
       "startDate": "2018-03-01",
       "endDate": "2024-02-01",
-      "score": "4.24/4.5",
+      "score": "4.24/4.5 (Rank 2/54)",
+      "summary": "Convergence Technology for Advanced Vehicles: a CS-oriented interdisciplinary program",
       "courses": []
     }
   ],
@@ -43,7 +44,7 @@
       "location": "Seoul, Korea",
       "position": "Control Engineer Intern",
       "url": "https://www.aceworks.ai/",
-      "startDate": "2025-06-28",
+      "startDate": "2022-06-28",
       "endDate": "2022-08-26",
       "summary": "K2 MCU Development – Engine Control Logic: Calculation of Fuel Quantity",
       "highlights": []
