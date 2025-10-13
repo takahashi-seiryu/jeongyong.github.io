@@ -44,16 +44,8 @@ I am an M.S. student in the
 advised by [Prof. SooJean Han](https://soojean.github.io/) in the
 [Autonomous Control for Stochastic Systems (ACSS)](http://acss.kaist.ac.kr/).
 
-My research focuses on **safety-critical system and control**,
-with applications to robotics.
-I am particularly interested in developing methods for **safe control of stochastic systems**
-and **uncertainty-aware motion planning** for autonomous robots.
+My research focuses on **safety-critical control and planning under uncertainty** for autonomous and robotic systems. I aim to develop autonomy frameworks that integrate data-driven learning approaches with formal safety guarantees, enabling intelligent systems that are not only high-performing but also provably safe.
 
-My long-term goal is to establish an autonomy framework that **unifies learning with formal guarantees**,
-so that our systems are not only performant but also provably safe.
+In the long term, I seek to combine control-theoretic rigor with learning-based adaptability to advance autonomy toward a future where intelligent systems operate safely in uncertain and dynamic environments. As society steadily transitions to greater automation, I envision contributing to a world where safety is not compromised by autonomy—a future beyond the accident-prone era of human-driven machines, toward truly dependable intelligent systems.
 
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+<!-- Toward provably safe autonomy through the integration of learning and control. -->
