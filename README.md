@@ -13,8 +13,8 @@ This is the personal homepage of Jeongyong Yang (Seiryu Takahashi).
 ## Local Development (Docker)
 
 ```bash
-docker compose pull
-docker compose up
+$ docker compose pull
+$ docker compose up
 ```
 
 Then visit `http://localhost:8080` in your browser. Stop the stack with `docker compose down` when you are done.
