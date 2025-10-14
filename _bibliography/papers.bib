@@ -1,11 +1,30 @@
 ---
 ---
+# booktitle, show_venue: for conference/journal name
+# preview: image file in assets/images/
+# pdf: link to pdf file
+# abstract: abstract text
+# selected: true if you want to highlight the publication
+# annotation: additional note such as equal contribution
+
+@inproceedings{yang2025ksas,
+  title     = {Random Fourier Features Lifted Physics-Informed Koopman Network},
+  author    = {Yang, Jeongyong and Jeong, Minseok and Han, SooJean},
+  year      = {2025},
+  month     = {Nov},
+  booktitle = {Proceedings of the Korean Society for Aeronautical & Space Sciences (KSAS)},
+  abbr      = {KSAS},
+  abstract  = {Recent advances in Koopman learning have been largely dominated by model-free approaches. However, the increasing availability of simulators and known vector fields has highlighted the potential of model-based environments. In this study, a novel method termed Random Fourier Feature–Physics-Informed Koopman Network (RFF-PIKN) is proposed, which combines Random Fourier Features (RFF) with a Physics-Informed Koopman Network structure. The proposed approach fixes the RFFs and trains only the linear transformation matrix and decoder, thereby achieving a significant reduction in the number of parameters and computational cost while maintaining high predictive accuracy. To ensure fair comparison, the same RFF and physics-informed learning scheme are applied to Extended Dynamic Mode Decomposition (EDMD) and Learning Koopman Invariant Subspace (LKIS) methods. Experimental results on various benchmark systems demonstrate that RFF-PIKN consistently outperforms existing methods in terms of training stability and long-term prediction accuracy. These results confirm that, in model-based settings, the PIKN architecture provides a fundamentally more efficient framework than conventional loss-driven approaches.},
+  preview   = {RFF_PIKN.png},
+}
+
 
 @misc{yang2025safeflowmatchersafefastplanning,
   title={SafeFlowMatcher: Safe and Fast Planning using Flow Matching with Control Barrier Functions}, 
   author={Jeongyong Yang* and Seunghwan Jang* and SooJean Han},
   year={2025},
   month={Oct},
+  show_venue={arXiv preprint (under review)},
   eprint={2509.24243},
   archivePrefix={arXiv},
   primaryClass={cs.RO},
@@ -24,6 +43,7 @@
   author={Jeongyong Yang* and KwangBin Lee* and SooJean Han},
   year={2025},
   month={Jul},
+  show_venue={arXiv preprint (under review at ACC)},
   eprint={2507.11920},
   archivePrefix={arXiv},
   primaryClass={cs.RO},
@@ -38,11 +58,11 @@
 }
 
 @inproceedings{yang2025kroc,
-  author    = {Yang, Jeongyong and Ju, Hojin and Han, SooJean},
   title     = {Curvature and Energy-based Trajectory Optimization in Unstructured Environments},
-  booktitle = {Proceedings of the Korean Robotics Conference 2025 (KRoC 2025)},
+  author    = {Yang, Jeongyong and Ju, Hojin and Han, SooJean},
   year      = {2025},
-  month     = feb,
+  month     = {Feb},
+  booktitle = {Proceedings of the Korea Robotics Society Annual Conference (KRoC)},
   abbr      = {KRoC},
   abstract  = {Safe and efficient path planning is crucial for autonomous driving systems. In this paper, we propose a trajectory optimization algorithm for unstructured environments that minimizes both curvature and energy while achieving a near-time-optimal path. To improve efficiency of the optimization process, we employ path velocity decomposition and reformulate the complex optimization problem with the agent's dynamic constraints into a quadratic programming (QP) problem, considering the agent as a point of mass.
 Previous curvature-based algorithms were primarily designed for racing scenarios, limited to static bounded tracks. In contrast, our approach extends their applicability to complex open environments with obstacles, enabling safe and efficient navigation through the use of a boundary tube constraint. Furthermore, we introduce several techniques to adapt the algorithm to unstructured environments, such as adaptive path spacing to enhance computational efficiency by reducing the dimension of the QP problem. Additional methods, including boundary tube correction and decaying curvature bound, ensure more feasible and stable solutions for the algorithm. The proposed algorithm was implemented in ROS Gazebo and successfully tested on a four-wheel drive robot. Results demonstrate that the proposed algorithm generates safe, smooth and time efficient paths, showing improved performance compared to B-spline and the original curvature-based optimization method.},

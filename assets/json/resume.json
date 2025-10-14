@@ -62,9 +62,9 @@
   ],
   "interests": [
     {
-      "name": "Control",
+      "name": "System & Control",
       "icon": "fa-solid fa-tag",
-      "keywords": ["Control Barrier Functions", "Model Predictive Control", "Stochastic Systems", "Koopman Operator"]
+      "keywords": ["Control Barrier Functions", "Model Predictive Control", "Koopman Operator"]
     },
     {
       "name": "Learning & Uncertainty",
@@ -74,14 +74,19 @@
   ],
   "skills": [
     {
-      "name": "Software & Tools",
+      "name": "Languages",
       "icon": "fa-solid fa-hashtag",
       "keywords": ["C/C++", "Python", "MATLAB/Simulink"]
     },
     {
-      "name": "CAD & Simulation",
+      "name": "Frameworks & Tools",
       "icon": "fa-solid fa-hashtag",
-      "keywords": ["CATIA", "CarMaker"]
+      "keywords": ["CarMaker", "CarSim", "ROS1/ROS2"]
+    },
+    {
+      "name": "CAD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["CATIA"]
     }
   ]
 }
