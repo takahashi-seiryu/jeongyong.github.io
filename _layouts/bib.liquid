@@ -159,6 +159,30 @@
     </div>
 
     <!-- Journal/Book title and date -->
+    {%- comment -%}
+      Determine "under review" info.
+      Preferred: use custom field `under_review_at` in BibTeX entries.
+      Fallback: extract from `show_venue` if it contains "(under review at …)".
+    {%- endcomment -%}
+    {% assign show_venue_raw = entry.show_venue | default: '' %}
+    {% assign under_review_field = entry.under_review_at | default: '' %}
+    {% assign has_under_review = false %}
+    {% assign under_review_venue = '' %}
+    {% assign show_venue_clean = show_venue_raw %}
+    {% if under_review_field != '' and under_review_field != blank %}
+      {% assign has_under_review = true %}
+      {% assign under_review_venue = under_review_field | strip %}
+      {% if show_venue_raw contains ' (under review at ' %}
+        {% assign parts = show_venue_raw | split: ' (under review at ' %}
+        {% assign show_venue_clean = parts | first | strip %}
+      {% endif %}
+    {% elsif show_venue_raw contains ' (under review at ' %}
+      {% assign parts = show_venue_raw | split: ' (under review at ' %}
+      {% assign show_venue_clean = parts | first | strip %}
+      {% assign tail = parts | last %}
+      {% assign under_review_venue = tail | split: ')' | first | strip %}
+      {% assign has_under_review = true %}
+    {% endif %}
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
@@ -168,7 +192,11 @@
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% elsif entry.show_venue %}
-      {% capture entrytype %}<em>{{ entry.show_venue }}</em>{% endcapture %}
+      {% if has_under_review %}
+        {% capture entrytype %}<em>{{ show_venue_clean }}</em>{% endcapture %}
+      {% else %}
+        {% capture entrytype %}<em>{{ entry.show_venue }}</em>{% endcapture %}
+      {% endif %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
@@ -177,7 +205,11 @@
     {% endif %}
     {% if entry.year %}
       {% assign korean_flag = entry.korean | default: '' | downcase %}
-      {% capture entryyear %}{{ " " }}{{ entry.year }}{{ "." }}{% if korean_flag == 'true' or korean_flag == 'yes' or korean_flag == '1' %} (in Korean){% endif %}{% endcapture %}
+      {% if has_under_review %}
+        {% capture entryyear %}{{ " " }}{{ entry.year }}{{ "." }}{% endcapture %}
+      {% else %}
+        {% capture entryyear %}{{ " " }}{{ entry.year }}{{ "." }}{% if korean_flag == 'true' or korean_flag == 'yes' or korean_flag == '1' %} (in Korean){% endif %}{% endcapture %}
+      {% endif %}
     {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
@@ -191,9 +223,18 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
-      {{ periodical | strip }}
-    </div>
+    {% if has_under_review %}
+      {% assign korean_flag = entry.korean | default: '' | downcase %}
+      {% capture under_review_suffix %}(under review at {{ under_review_venue }}{% if korean_flag == 'true' or korean_flag == 'yes' or korean_flag == '1' %}, in Korean{% endif %}){% endcapture %}
+      <div class="periodical">
+        {{ periodical | strip }}
+        {{ under_review_suffix }}
+      </div>
+    {% else %}
+      <div class="periodical">
+        {{ periodical | strip }}
+      </div>
+    {% endif %}
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
