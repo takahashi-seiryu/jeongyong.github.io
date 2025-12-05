@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Excited to join the Autonomous Control for Stochastic Systems (ACSS) Lab at KAIST
+Excited to join the Autonomous Control for Stochastic Systems (ACSS) Lab at KAIST.
